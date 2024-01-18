@@ -1,0 +1,87 @@
+body {
+    background-image: url(kepek/v3.jpg);
+}
+
+main {
+    background-color: #cfc6b5;
+    color: #456280;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+nav a {
+
+}
+
+nav li {
+    list-style-type: none;
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    display: inline;
+}
+
+.kepek {
+    margin: auto;
+    padding: 10px;
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+aside {
+    grid-area: s;
+}
+
+article {
+    grid-area: a;
+}
+
+footer {
+    grid-area: f;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    border-collapse: collapse;
+}
+
+.fejlec{
+    background-color: #506a85;
+    color: white;
+}
+
+.masodiksor, .negyediksor{
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: #506a85;
+    color: white;
+}
