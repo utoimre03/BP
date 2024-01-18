@@ -6,23 +6,24 @@ main {
     background-color: #cfc6b5;
     color: #456280;
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "h h"
+        "n n"
+        "s a"
+        "f f";
 }
 
 nav {
     padding-top: 10px;
 }
 
-nav a {
-
-}
-
-nav li {
-    list-style-type: none;
-    list-style: none;
+nav ul {
     font-weight: bold;
-    text-decoration: none;
-    padding-top: 10px;
-    display: inline;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .kepek {
@@ -71,9 +72,14 @@ table {
     border-collapse: collapse;
 }
 
+table td{
+    border: solid 1px #506a85;
+}
+
 .fejlec{
     background-color: #506a85;
     color: white;
+    font-weight: bold;
 }
 
 .masodiksor, .negyediksor{
@@ -84,4 +90,19 @@ footer {
     text-align: center;
     background-color: #506a85;
     color: white;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        grid-template-areas: 
+            "h h"
+            "n n"
+            "a a"
+            "s s"
+            "f f";
+    }
+    
+    nav ul {
+        grid-template-columns: 1fr;
+    }
 }
